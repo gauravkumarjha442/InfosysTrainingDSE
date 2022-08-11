@@ -1,0 +1,231 @@
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 19140 (D:\Session\classdemo\SpringDemoAutowire\target\classes started by RekhaKG_Nair in D:\Session\classdemo\SpringDemoAutowire)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 1.365 seconds (JVM running for 2.597)
+ INFO [main] com.infy.service.EmployeeService****** - Logging info msg--1 in const--info
+ WARN [main] com.infy.service.EmployeeService****** - Logging info msg--1 in const--warn
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 7660 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ WARN [main] org.springframework.context.annotation.AnnotationConfigApplicationContext****** - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springDemoAutowireApplication': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.infy.service [Xlint:invalidAbsoluteTypeName]
+ INFO [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener****** - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ERROR [main] org.springframework.boot.SpringApplication****** - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springDemoAutowireApplication': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.infy.service [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.2.jar:2.7.2]
+	at com.infy.SpringDemoAutowireApplication.main(SpringDemoAutowireApplication.java:15) ~[classes/:?]
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.infy.service [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319) ~[aspectjweaver-1.9.7.jar:?]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:128) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:97) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:78) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:341) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 14 more
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 60 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 1.576 seconds (JVM running for 3.012)
+ INFO [main] com.infy.aspect.MyAspect****** - Will get applied before the method
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 19824 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 1.594 seconds (JVM running for 2.971)
+ INFO [main] com.infy.aspect.MyAspect****** - Will get applied before the method
+ INFO [main] com.infy.aspect.MyAspect****** - Will get applied after the method
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 17700 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 1.531 seconds (JVM running for 2.781)
+ INFO [main] com.infy.aspect.MyAspect****** - Will get applied before the method
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 22236 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ WARN [main] org.springframework.context.annotation.AnnotationConfigApplicationContext****** - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': Initialization of bean failed; nested exception is org.springframework.aop.framework.AopConfigException: Could not generate CGLIB subclass of class org.springframework.boot.autoconfigure.AutoConfigurationPackages$BasePackages: Common causes of this problem include using a final class or a non-visible class; nested exception is java.lang.IllegalArgumentException: Cannot subclass final class org.springframework.boot.autoconfigure.AutoConfigurationPackages$BasePackages
+ INFO [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener****** - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ERROR [main] org.springframework.boot.SpringApplication****** - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': Initialization of bean failed; nested exception is org.springframework.aop.framework.AopConfigException: Could not generate CGLIB subclass of class org.springframework.boot.autoconfigure.AutoConfigurationPackages$BasePackages: Common causes of this problem include using a final class or a non-visible class; nested exception is java.lang.IllegalArgumentException: Cannot subclass final class org.springframework.boot.autoconfigure.AutoConfigurationPackages$BasePackages
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.2.jar:2.7.2]
+	at com.infy.SpringDemoAutowireApplication.main(SpringDemoAutowireApplication.java:15) ~[classes/:?]
+Caused by: org.springframework.aop.framework.AopConfigException: Could not generate CGLIB subclass of class org.springframework.boot.autoconfigure.AutoConfigurationPackages$BasePackages: Common causes of this problem include using a final class or a non-visible class; nested exception is java.lang.IllegalArgumentException: Cannot subclass final class org.springframework.boot.autoconfigure.AutoConfigurationPackages$BasePackages
+	at org.springframework.aop.framework.CglibAopProxy.getProxy(CglibAopProxy.java:209) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ProxyFactory.getProxy(ProxyFactory.java:110) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.createProxy(AbstractAutoProxyCreator.java:480) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:344) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 14 more
+Caused by: java.lang.IllegalArgumentException: Cannot subclass final class org.springframework.boot.autoconfigure.AutoConfigurationPackages$BasePackages
+	at org.springframework.cglib.proxy.Enhancer.generateClass(Enhancer.java:660) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.ClassLoaderAwareGeneratorStrategy.generate(ClassLoaderAwareGeneratorStrategy.java:57) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:358) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.proxy.Enhancer.generate(Enhancer.java:585) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:110) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:108) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-5.3.22.jar:5.3.22]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:134) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:319) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:572) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:419) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ObjenesisCglibAopProxy.createProxyClassAndInstance(ObjenesisCglibAopProxy.java:57) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy.getProxy(CglibAopProxy.java:206) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ProxyFactory.getProxy(ProxyFactory.java:110) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.createProxy(AbstractAutoProxyCreator.java:480) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:344) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 14 more
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 26212 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ WARN [main] org.springframework.context.annotation.AnnotationConfigApplicationContext****** - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': Initialization of bean failed; nested exception is org.springframework.aop.framework.AopConfigException: Could not generate CGLIB subclass of class org.springframework.boot.autoconfigure.AutoConfigurationPackages$BasePackages: Common causes of this problem include using a final class or a non-visible class; nested exception is java.lang.IllegalArgumentException: Cannot subclass final class org.springframework.boot.autoconfigure.AutoConfigurationPackages$BasePackages
+ INFO [main] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener****** - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+ERROR [main] org.springframework.boot.SpringApplication****** - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.boot.autoconfigure.AutoConfigurationPackages': Initialization of bean failed; nested exception is org.springframework.aop.framework.AopConfigException: Could not generate CGLIB subclass of class org.springframework.boot.autoconfigure.AutoConfigurationPackages$BasePackages: Common causes of this problem include using a final class or a non-visible class; nested exception is java.lang.IllegalArgumentException: Cannot subclass final class org.springframework.boot.autoconfigure.AutoConfigurationPackages$BasePackages
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.2.jar:2.7.2]
+	at com.infy.SpringDemoAutowireApplication.main(SpringDemoAutowireApplication.java:15) ~[classes/:?]
+Caused by: org.springframework.aop.framework.AopConfigException: Could not generate CGLIB subclass of class org.springframework.boot.autoconfigure.AutoConfigurationPackages$BasePackages: Common causes of this problem include using a final class or a non-visible class; nested exception is java.lang.IllegalArgumentException: Cannot subclass final class org.springframework.boot.autoconfigure.AutoConfigurationPackages$BasePackages
+	at org.springframework.aop.framework.CglibAopProxy.getProxy(CglibAopProxy.java:209) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ProxyFactory.getProxy(ProxyFactory.java:110) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.createProxy(AbstractAutoProxyCreator.java:480) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:344) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 14 more
+Caused by: java.lang.IllegalArgumentException: Cannot subclass final class org.springframework.boot.autoconfigure.AutoConfigurationPackages$BasePackages
+	at org.springframework.cglib.proxy.Enhancer.generateClass(Enhancer.java:660) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.DefaultGeneratorStrategy.generate(DefaultGeneratorStrategy.java:25) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.ClassLoaderAwareGeneratorStrategy.generate(ClassLoaderAwareGeneratorStrategy.java:57) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.AbstractClassGenerator.generate(AbstractClassGenerator.java:358) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.proxy.Enhancer.generate(Enhancer.java:585) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:110) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData$3.apply(AbstractClassGenerator.java:108) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.internal.LoadingCache$2.call(LoadingCache.java:54) ~[spring-core-5.3.22.jar:5.3.22]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) ~[?:?]
+	at org.springframework.cglib.core.internal.LoadingCache.createEntry(LoadingCache.java:61) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.internal.LoadingCache.get(LoadingCache.java:34) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.AbstractClassGenerator$ClassLoaderData.get(AbstractClassGenerator.java:134) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.core.AbstractClassGenerator.create(AbstractClassGenerator.java:319) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.proxy.Enhancer.createHelper(Enhancer.java:572) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.cglib.proxy.Enhancer.createClass(Enhancer.java:419) ~[spring-core-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ObjenesisCglibAopProxy.createProxyClassAndInstance(ObjenesisCglibAopProxy.java:57) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.CglibAopProxy.getProxy(CglibAopProxy.java:206) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.ProxyFactory.getProxy(ProxyFactory.java:110) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.createProxy(AbstractAutoProxyCreator.java:480) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:344) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293) ~[spring-aop-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 14 more
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 21256 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 1.839 seconds (JVM running for 3.337)
+ INFO [main] com.infy.aspect.MyAspect****** - Will get applied after the method
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 25912 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 1.827 seconds (JVM running for 3.942)
+ INFO [main] com.infy.aspect.MyAspect****** - Will get applied after the method
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 22064 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 1.61 seconds (JVM running for 3.222)
+ INFO [main] com.infy.aspect.MyAspect****** - Will get applied after the method
+ INFO [main] com.infy.aspect.MyAspect****** - Will get applied after the method
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 17808 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 2.627 seconds (JVM running for 4.637)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 20840 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 1.511 seconds (JVM running for 3.03)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 15500 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 2.888 seconds (JVM running for 4.22)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 20540 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 2.549 seconds (JVM running for 4.903)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 8052 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 1.446 seconds (JVM running for 2.937)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 8168 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 1.677 seconds (JVM running for 3.298)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 20928 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 1.875 seconds (JVM running for 4.196)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 12796 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 1.534 seconds (JVM running for 3.009)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 17652 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 1.328 seconds (JVM running for 2.682)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 24524 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 1.359 seconds (JVM running for 3.31)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 26596 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 1.437 seconds (JVM running for 2.98)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 20000 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 2.418 seconds (JVM running for 10.87)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 19620 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 1.222 seconds (JVM running for 2.618)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Starting SpringDemoAutowireApplication using Java 17.0.2 on HYDHTC218465L with PID 280 (D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop\target\classes started by RekhaKG_Nair in D:\OneDrive - Infosys Limited\sessions2018\Spring Basics\springbasicsdemoJun2022\SpringDemoAop)
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - No active profile set, falling back to 1 default profile: "default"
+ INFO [main] com.infy.SpringDemoAutowireApplication****** - Started SpringDemoAutowireApplication in 1.372 seconds (JVM running for 2.791)
